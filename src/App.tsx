@@ -144,10 +144,7 @@ function App() {
   const allOnPageSelected =
     artworks.length > 0 &&
     artworks.every((a, i) => isRowSelectedByRule(a.id, i) || selectedIds.has(a.id));
-  const someOnPageSelected =
-    artworks.some((a, i) => isRowSelectedByRule(a.id, i) || selectedIds.has(a.id));
   const selectAllChecked = allOnPageSelected;
-  const selectAllIndeterminate = someOnPageSelected && !allOnPageSelected;
 
   const [customSelectValue, setCustomSelectValue] = useState<number | null>(null);
 
