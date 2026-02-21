@@ -35,7 +35,7 @@ Use **Netlify**, **Cloudflare Pages**, or another cloud provider. Do **not** use
 
 ---
 
-### Option A: Netlify (from Git)
+### Netlify (from Git)
 
 1. Push this project to a **public** GitHub (or GitLab/Bitbucket) repository.
 2. Go to [netlify.com](https://www.netlify.com) and sign in.
@@ -56,24 +56,6 @@ Use **Netlify**, **Cloudflare Pages**, or another cloud provider. Do **not** use
 
 ---
 
-### Option B: Cloudflare Pages (from Git)
-
-1. Push this project to a **public** GitHub repository.
-2. Go to [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-3. Select your repository.
-4. Set:
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-5. Click **Save and Deploy**. Your site will be at `https://<project-name>.pages.dev`.
-
-**Cloudflare Pages (direct upload):**
-
-1. Run `npm run build` locally.
-2. In Cloudflare: **Workers & Pages** → **Create** → **Pages** → **Upload assets**.
-3. Upload the contents of the **`dist`** folder (or the whole `dist` folder as a zip).
-4. Cloudflare will give you a live URL.
-
----
 
 ### After deployment
 
